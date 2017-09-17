@@ -179,7 +179,7 @@ export const Week = (props: WeekType) => {
         onPress={onPress}
         disabled={isBlocked && !onDisableClicked}
       >
-        <Text style={styleText}>{day.date()}</Text>
+        <Text style={styleText}>{day.date().toString()}</Text>
       </TouchableOpacity>
     );
   });
